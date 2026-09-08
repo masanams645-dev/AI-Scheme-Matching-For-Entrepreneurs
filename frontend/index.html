@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI Scheme Matcher</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<header><b>⚡ AI Scheme Matcher</b><button id="demo">Load Demo</button></header>
+
+<section class="hero">
+<div>
+<span>AI-POWERED • INCLUSIVE ENTREPRENEURSHIP</span>
+<h1>Find the right scheme for your business.</h1>
+<p>Enter your profile once. The matching engine ranks relevant schemes and explains why they match.</p>
+</div>
+<div class="heroCard"><strong>AI</strong><h3>Smart Matching Engine</h3><p>Profile → Eligibility → Ranking → Explanation</p></div>
+</section>
+
+<section class="panel">
+<h2>Your Entrepreneur Profile</h2>
+<form id="form">
+<div class="grid">
+<label>Name<input id="name" required placeholder="e.g. Ravi"></label>
+<label>State<select id="state"><option>Tamil Nadu</option><option>Kerala</option><option>Karnataka</option><option>Other</option></select></label>
+<label>Category<select id="category"><option>SC</option><option>ST</option><option>OBC</option><option>General</option></select></label>
+<label>Age<input id="age" type="number" value="28" min="18" required></label>
+<label>Annual income (₹)<input id="income" type="number" value="200000" min="0" required></label>
+<label>Business type<select id="business"><option>Food</option><option>Retail</option><option>Manufacturing</option><option>Services</option><option>Technology</option><option>Agriculture</option></select></label>
+<label>Business stage<select id="stage"><option>Idea</option><option>Startup</option><option>Existing</option></select></label>
+<label>Funding required (₹)<input id="loan" type="number" value="500000" min="0" required></label>
+</div>
+<div class="checks">
+<label><input id="women" type="checkbox"> Woman entrepreneur</label>
+<label><input id="disability" type="checkbox"> Disability support needed</label>
+<label><input id="rural" type="checkbox"> Rural business</label>
+</div>
+<button class="primary">🤖 Find My Best Schemes</button>
+</form>
+</section>
+
+<section id="loading" class="panel hidden center"><div class="spinner"></div><h3>AI is analyzing...</h3><p>Checking eligibility • Comparing schemes • Creating explanations</p></section>
+
+<section id="results" class="panel hidden">
+<div class="resultHead"><h2>Personalized Recommendations</h2><b id="count"></b></div>
+<div class="toolbar"><input id="search" placeholder="🔎 Search schemes"><select id="filter"><option value="all">All matches</option><option value="eligible">Likely eligible</option><option value="high">80%+ match</option></select></div>
+<div id="cards" class="cards"></div>
+</section>
+
+<section class="stats"><div><b id="s1">0</b><small>Schemes</small></div><div><b id="s2">0</b><small>Profiles analyzed</small></div><div><b id="s3">0</b><small>Feedback</small></div></section>
+
+<div id="modal" class="modal hidden"><div class="modalBox"><button onclick="closeModal()">×</button><div id="details"></div></div></div>
+<script src="/static/app.js"></script>
+</body>
+</html>

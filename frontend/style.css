@@ -1,0 +1,396 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+    color: #172033;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    height: 70px;
+    background: white;
+    border-bottom: 1px solid #e5e7eb;
+    padding: 0 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+
+header b {
+    font-size: 20px;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+button,
+.primary {
+    border: 0;
+    border-radius: 10px;
+    padding: 12px 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.primary {
+    background: #4f46e5;
+    color: #fff;
+    width: 100%;
+    margin-top: 20px;
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    max-width: 1150px;
+    margin: 45px auto 25px;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 1.5fr 0.8fr;
+    gap: 30px;
+}
+
+.hero span {
+    font-size: 12px;
+    color: #4f46e5;
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin: 12px 0;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #667085;
+    line-height: 1.6;
+}
+
+.heroCard {
+    background: #171b2e;
+    color: #fff;
+    border-radius: 22px;
+    padding: 35px;
+}
+
+.heroCard strong {
+    font-size: 35px;
+    background: #fff;
+    color: #4f46e5;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+/* =========================
+   PANELS
+========================= */
+
+.panel {
+    max-width: 1150px;
+    margin: 25px auto;
+    padding: 30px;
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 20px;
+}
+
+/* =========================
+   FORM
+========================= */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+label {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 13px;
+    margin-top: 7px;
+    border: 1px solid #d7dce5;
+    border-radius: 10px;
+    background: white;
+    font-size: 14px;
+}
+
+input:focus,
+select:focus {
+    outline: 2px solid #c7d2fe;
+    border-color: #4f46e5;
+}
+
+.checks {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 18px;
+}
+
+.checks label {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.checks input {
+    width: auto;
+    margin: 0;
+}
+
+/* =========================
+   RESULTS
+========================= */
+
+.resultHead,
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    align-items: center;
+}
+
+.toolbar {
+    margin: 15px 0;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.card {
+    border: 1px solid #e3e7ef;
+    border-radius: 17px;
+    padding: 22px;
+    background: #fff;
+}
+
+.card h3 {
+    margin: 8px 0;
+}
+
+.score {
+    font-size: 28px;
+    font-weight: 900;
+}
+
+.meter {
+    height: 8px;
+    background: #edf0f5;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 12px 0;
+}
+
+.meter i {
+    display: block;
+    height: 100%;
+    background: #4f46e5;
+    border-radius: 20px;
+}
+
+.muted {
+    color: #667085;
+    line-height: 1.5;
+}
+
+.chip {
+    display: block;
+    background: #ecfdf3;
+    color: #137a4a;
+    padding: 7px;
+    border-radius: 7px;
+    margin: 6px 0;
+    font-size: 12px;
+}
+
+.warn {
+    display: block;
+    background: #fff7ed;
+    color: #9a4b00;
+    padding: 7px;
+    border-radius: 7px;
+    margin: 6px 0;
+    font-size: 12px;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.actions button,
+.actions a {
+    flex: 1;
+    text-align: center;
+    text-decoration: none;
+}
+
+.actions button {
+    background: #eef2ff;
+    color: #3730a3;
+}
+
+/* =========================
+   STATS
+========================= */
+
+.stats {
+    max-width: 1150px;
+    margin: 25px auto 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.stats div {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #e5e7eb;
+    border-radius: 15px;
+}
+
+.stats b {
+    display: block;
+    font-size: 28px;
+}
+
+.stats small {
+    color: #667085;
+}
+
+/* =========================
+   LOADING
+========================= */
+
+.center {
+    text-align: center;
+}
+
+/*
+   IMPORTANT:
+   This hides elements such as
+   loading/results/modal when they
+   have the hidden class.
+*/
+
+.hidden {
+    display: none !important;
+}
+
+.spinner {
+    width: 42px;
+    height: 42px;
+    border: 4px solid #e5e7eb;
+    border-top-color: #4f46e5;
+    border-radius: 50%;
+    margin: auto;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* =========================
+   MODAL
+========================= */
+
+.modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    display: grid;
+    place-items: center;
+    padding: 20px;
+    z-index: 1000;
+}
+
+/*
+   VERY IMPORTANT:
+   If modal has both "modal" and "hidden",
+   hidden MUST win.
+*/
+
+.modal.hidden {
+    display: none !important;
+}
+
+.modalBox {
+    background: #fff;
+    border-radius: 20px;
+    padding: 30px;
+    max-width: 700px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+}
+
+.modalBox > button {
+    float: right;
+    font-size: 25px;
+    background: none;
+    padding: 5px 10px;
+    color: #172033;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 800px) {
+
+    .hero,
+    .grid,
+    .cards,
+    .stats {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .resultHead,
+    .toolbar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .actions {
+        flex-direction: column;
+    }
+}
